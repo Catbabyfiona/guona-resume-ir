@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>郭娜 · 投融资总监 / 资本运营</title>
+<style>
+:root{
+  --paper:#faf8f3; --ink:#1a1a1a; --ink2:#3d3d3d; --mut:#8b8577;
+  --gold:#8a6d3b; --line:#e6e1d4; --card:#fff; --dark:#141414;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;
+  background:var(--paper); color:var(--ink); line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:880px;margin:0 auto;padding:56px 28px 80px;}
+
+/* HERO */
+.hero{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;}
+.name{font-family:"Songti SC","Noto Serif CJK SC",serif;font-size:46px;font-weight:700;letter-spacing:6px;line-height:1;}
+.name-en{font-size:11px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-top:10px;}
+.hero-contact{text-align:right;font-size:13px;color:var(--ink2);line-height:1.9;}
+.rule{border:none;border-top:2px solid var(--ink);margin:22px 0 0;}
+.rule-thin{border:none;border-top:1px solid var(--line);margin:18px 0;}
+
+.role{font-size:20px;font-weight:700;letter-spacing:1px;margin-top:20px;}
+.intent{display:inline-block;font-size:12px;color:#5a5444;border:1px solid #cdc5b2;padding:4px 12px;border-radius:3px;margin-top:12px;}
+
+/* STATS */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px;}
+.stat{background:var(--card);border:1px solid var(--line);padding:18px 16px;}
+.stat .num{font-family:"Songti SC",serif;font-size:26px;font-weight:700;color:var(--gold);}
+.stat .lab{font-size:12px;color:var(--mut);margin-top:4px;letter-spacing:.5px;}
+
+/* SECTION */
+.sec{margin-top:44px;}
+.sec-title{font-size:13px;font-weight:700;letter-spacing:4px;display:flex;align-items:center;gap:12px;color:var(--ink);}
+.sec-title:after{content:"";flex:1;border-top:1px solid rgba(0,0,0,.2);}
+.lead{margin-top:14px;color:var(--ink2);text-align:justify;font-size:14.5px;}
+
+.adv{margin-top:16px;display:grid;gap:10px;}
+.adv li{list-style:none;padding-left:18px;position:relative;font-size:14px;color:var(--ink2);text-align:justify;}
+.adv li:before{content:"";position:absolute;left:0;top:9px;width:5px;height:5px;background:var(--gold);}
+.adv li b{color:var(--ink);}
+
+/* CHIPS */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+.chip{font-size:12.5px;color:#33302a;background:#f1eee6;border:1px solid #e2ddd0;padding:4px 12px;border-radius:3px;}
+
+/* JOB */
+.job{margin-top:20px;}
+.job-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;}
+.co{font-size:16px;font-weight:700;} .title{font-size:13.5px;color:#3f3a2e;font-weight:600;margin-left:8px;}
+.date{font-size:12.5px;color:var(--mut);}
+.bullets{margin-top:10px;display:grid;gap:7px;}
+.bullets li{list-style:none;padding-left:16px;position:relative;font-size:13.8px;color:var(--ink2);text-align:justify;}
+.bullets li:before{content:"";position:absolute;left:0;top:9px;width:4px;height:4px;background:var(--gold);}
+.bullets li b{color:var(--ink);}
+.result{margin-top:10px;font-size:13.5px;color:var(--ink2);background:#fbfaf6;border-left:2px solid var(--gold);padding:10px 14px;text-align:justify;}
+
+/* PROJECT */
+.proj{margin-top:18px;background:var(--card);border:1px solid var(--line);padding:22px 24px;}
+.proj-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;}
+.proj-name{font-size:16px;font-weight:700;}
+.proj-meta{font-size:12.5px;color:#7a5f2e;}
+.equity{display:flex;gap:10px;margin:12px 0;flex-wrap:wrap;}
+.eq{flex:1;min-width:140px;background:#141414;color:#f5efe0;padding:12px 14px;}
+.eq .pct{font-family:"Songti SC",serif;font-size:22px;font-weight:700;color:#e8c98a;}
+.eq .who{font-size:12px;color:#c9bfa5;margin-top:2px;}
+
+/* TABLE */
+table{width:100%;border-collapse:collapse;margin-top:14px;font-size:13.5px;background:var(--card);}
+th{background:#f1eee6;text-align:left;padding:10px 12px;font-weight:600;border-bottom:1px solid #cdc5b2;color:#3f3a2e;}
+td{padding:9px 12px;border-bottom:1px solid #eee9dd;vertical-align:top;color:var(--ink2);}
+td:first-child{font-weight:700;color:var(--ink);white-space:nowrap;}
+
+/* OTHER */
+.other{margin-top:8px;}
+.other-row{display:flex;justify-content:space-between;align-items:baseline;padding:10px 0;border-bottom:1px dashed var(--line);flex-wrap:wrap;gap:4px;}
+.other-row .l{font-size:13.8px;font-weight:600;}
+.other-row .r{font-size:12.5px;color:var(--mut);}
+.other-row .d{font-size:13px;color:var(--ink2);flex-basis:100%;}
+
+footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;font-size:12px;color:var(--mut);letter-spacing:1px;}
+
+@media (max-width:640px){
+  .wrap{padding:36px 18px 60px;}
+  .name{font-size:34px;letter-spacing:3px;}
+  .hero-contact{text-align:left;}
+  .stats{grid-template-columns:repeat(2,1fr);}
+  .role{font-size:17px;}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <div>
+      <div class="name">郭娜</div>
+      <div class="name-en">Financing &amp; Investment Director · Capital Operation</div>
+    </div>
+    <div class="hero-contact">
+      13120250250<br>755360966@qq.com<br>北京
+    </div>
+  </div>
+  <hr class="rule">
+
+  <div class="role">投融资总监 · 资本运营与战略投资（文旅 / 消费 / 科技）</div>
+  <div class="intent">求职意向：投融资总监 / 战略投资 / 资本运营</div>
+
+  <div class="stats">
+    <div class="stat"><div class="num">4 年</div><div class="lab">产业侧投融资实战</div></div>
+    <div class="stat"><div class="num">5 类</div><div class="lab">资本方对接资源</div></div>
+    <div class="stat"><div class="num">2000 万</div><div class="lab">合资公司注册资本</div></div>
+    <div class="stat"><div class="num">452 万</div><div class="lab">文旅项目中标额</div></div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-title">职业定位 &amp; 核心优势</div>
+    <p class="lead">4 年产业侧投融资实战叠加 11 年品牌与项目管理复合背景，横跨文旅、消费、科技、投资多行业。具备投融资材料体系搭建、多元资本对接、跨企业合资架构与交易结构设计能力，可独立完成从可行性研究、盈利测算到多方谈判、项目落地的完整闭环。</p>
+    <ul class="adv">
+      <li><b>投融资材料体系</b>｜组织编写商业计划书（BP）、融资方案、投资分析报告，面向城投、银行、政府、产业方、投资机构五类资本方输出多版本材料</li>
+      <li><b>多元资本对接</b>｜覆盖专业投资机构、城投平台、政府部门、银行及产业资本，具备资源型投融资推进能力</li>
+      <li><b>交易结构设计与落地</b>｜主导 2000 万元注册资本合资公司的股权架构（40:60）、治理安排、合作分成与权责划分</li>
+      <li><b>可行性研究与测算</b>｜独立完成全维度可行性研究报告、商业模式设计与盈利测算</li>
+      <li><b>产业理解与研究</b>｜文旅、消费、科技多行业研究与竞品分析，能将行业判断转化为投资与业务决策</li>
+    </ul>
+  </div>
+
+  <div class="sec">
+    <div class="sec-title">核心能力</div>
+    <div class="chips">
+      <span class="chip">投融资材料撰写</span><span class="chip">融资方案设计</span><span class="chip">交易结构设计</span>
+      <span class="chip">可行性研究</span><span class="chip">尽职调查应对</span><span class="chip">盈利模型测算</span>
+      <span class="chip">行业研究</span><span class="chip">竞品分析</span><span class="chip">多方资源整合</span><span class="chip">项目管理</span>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-title">工作经历</div>
+    <div class="job">
+      <div class="job-head">
+        <div><span class="co">北京分享时代科技股份有限公司</span><span class="title">品牌市场总监（兼资本运营）</span></div>
+        <div class="date">2022.01 – 至今</div>
+      </div>
+      <ul class="bullets">
+        <li>组织编写商业计划书、融资方案、投资分析报告等核心材料，面向城投、银行、政府、产业方、投资机构五类资本方输出多版本方案，配合高层推进阶段性融资目标</li>
+        <li>对接专业投资机构、城投平台、政府部门、银行及产业资本，负责融资沟通、材料答疑与进度跟进（2022–2025）</li>
+        <li>参与投融资项目谈判、交易结构讨论与风险评估，协调财务、法务、业务等内部资源</li>
+        <li>作为被投方主导应对多轮审计与尽职调查，统筹品牌资产、业务数据、尽调清单问答等材料</li>
+        <li>主导集团品牌体系建设与整合营销，对接资本市场优化品牌价值表达，完善公司治理与报告体系，助力企业上市筹备</li>
+      </ul>
+      <div class="result"><b>核心成果：</b>推动公司完成上市前核心准备，完善治理与报告体系；四年间支撑多轮融资沟通，沉淀覆盖五类资本方的标准化投融资材料体系；统筹大型上市会议、品牌传播、奖项申请与 IP 孵化。</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-title">代表项目</div>
+
+    <div class="proj">
+      <div class="proj-head">
+        <div class="proj-name">唐山文旅 IP 合资与景区品牌开发项目</div>
+        <div class="proj-meta">中标 452 万元 ｜ 项目核心负责人</div>
+      </div>
+      <div class="equity">
+        <div class="eq"><div class="pct">40%</div><div class="who">星迷（天津）科技有限公司（分享时代全资子公司）</div></div>
+        <div class="eq"><div class="pct">60%</div><div class="who">大晟时代文化投资有限公司（唐山文旅集团控股上市公司）</div></div>
+      </div>
+      <ul class="bullets">
+        <li>主导双方合资项目全流程，合资设立<b>唐山晟星数字文化有限公司</b>，注册资本 2000 万元</li>
+        <li>独立起草并设计项目全部文件：<b>可行性研究报告、股权与治理结构、合作分成机制、商业模式与盈利测算</b></li>
+        <li>牵头与唐山文旅集团投资部及多方谈判，统筹法务、财务、运营、文旅规划团队，解决跨企业权责划分与资源整合难题</li>
+        <li>中标十大核心景区（开滦国家矿山公园、清东陵、南湖旅游景区等）品牌 IP 全案，构建"一景区一核心 IP + 全域联动"体系</li>
+      </ul>
+    </div>
+
+    <div class="proj">
+      <div class="proj-head">
+        <div class="proj-name">企业上市战略规划与资本对接</div>
+        <div class="proj-meta">上市筹备 ｜ 投资机构对接</div>
+      </div>
+      <ul class="bullets">
+        <li>主导集团上市准备工作，优化公司治理与报告体系，对接多方投资机构，推动上市流程</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-title">资本对接与材料输出</div>
+    <table>
+      <tr><th>资本方类型</th><th>对接内容</th><th>主要输出材料</th></tr>
+      <tr><td>专业投资机构</td><td>融资沟通、材料答疑、尽调问答</td><td>商业计划书、融资方案、投资分析报告</td></tr>
+      <tr><td>城投平台</td><td>项目合作与融资推进</td><td>可行性研究报告、盈利测算、合作方案</td></tr>
+      <tr><td>政府部门</td><td>政策对接与项目申报</td><td>项目申报材料、可行性研究、市场分析</td></tr>
+      <tr><td>银行</td><td>融资材料与业务数据说明</td><td>融资方案、财务与业务数据包</td></tr>
+      <tr><td>产业资本</td><td>合资合作与交易结构设计</td><td>合资架构、合作分成机制、商业模式设计</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <div class="sec-title">行业研究与分析成果</div>
+    <ul class="bullets">
+      <li><b>五音之光指环 · 竞品对比与差异化分析报告</b>｜竞品格局梳理、差异化定位与市场切入策略</li>
+      <li><b>AI 领域个人真实收入全景调研</b>｜赛道变现结构与收益模型拆解</li>
+      <li>文旅 / 消费 / 科技多行业政策与市场情报分析，建立业务数据模型支撑投资与业务决策</li>
+    </ul>
+  </div>
+
+  <div class="sec">
+    <div class="sec-title">其他工作经历（产业理解与项目管理背书）</div>
+    <div class="other">
+      <div class="other-row"><div class="l">北京互动时代网络技术有限公司 ｜ 市场品牌总监</div><div class="r">2021.03 – 2021.12</div>
+        <div class="d">主导品牌定位、视觉体系与 O2O 商业模式研究；依托环球影业 IP 图库主导衍生品开发与 IP 商业化。</div></div>
+      <div class="other-row"><div class="l">小方瓶（北京）酒业有限公司 ｜ 品牌市场总监</div><div class="r">2019.09 – 2021.02</div>
+        <div class="d">负责燕窝饮料与国潮好酒品牌全案，完成两个品牌 0→1 定位与体系搭建，建立产品盈利模型。</div></div>
+      <div class="other-row"><div class="l">北京莱鹏纳通文化传媒有限公司 ｜ 品牌战略负责人</div><div class="r">2015.11 – 2019.06</div>
+        <div class="d">从 0 组建 45 人团队，完成年度投资目标；开展市场情报与行业政策分析，建立业务数据模型。</div></div>
+      <div class="other-row"><div class="l">八零印象 ｜ 客户总监</div><div class="r">2013.08 – 2015.10</div>
+        <div class="d">品牌诊断、整合营销规划与竞标落地，统筹项目预算与进度。</div></div>
+      <div class="other-row"><div class="l">北京灵智精锐整合营销顾问有限公司 ｜ 客户总监</div><div class="r">2009.09 – 2013.07</div>
+        <div class="d">为蒙牛、宝洁、中粮、雀巢、一汽、现代等品牌提供全年整合营销服务。</div></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-title">教育背景 &amp; 技能</div>
+    <ul class="bullets">
+      <li><b>对外经济贸易大学</b>｜本科（2005.09 – 2009.06）</li>
+      <li>财务测算与盈利模型（Excel）｜可行性研究｜尽职调查应对｜BP / 融资材料撰写｜行业研究与竞品分析｜PPT / Word / Excel / XMind｜AI 工具提效｜英语可沟通</li>
+    </ul>
+  </div>
+
+  <footer>
+    <span>郭娜 · 投融资总监</span>
+    <span>GUO NA · 2026</span>
+  </footer>
+
+</div>
+</body>
+</html>
